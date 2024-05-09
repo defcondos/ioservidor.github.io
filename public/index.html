@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interruptor</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>   
+    <center>
+    <br>
+    <div class="card text-white bg-info mb-3" style="max-width: 40rem;">
+        <div class="card-header"><H1 class="title is-1"><STRONG>INTERRUPTOR REMOTO<STRONG></H1></div>
+        <div class="card-body">
+            <h4 class="card-title">Activa o desactiva el interruptor</h4>
+            <br>
+            <form name="formulario" action="" method="post">
+                <div class="field">
+                    <div class="form-check form-switch">
+                        <label>Desactivar /
+                        <input id="interruptor" type="checkbox" name="interruptor" class="form-check-input">    
+                        Activar</label>
+                    </div>
+                    <div id="resultado">
+                        El interruptor está en la posición
+                    </div>
+                </div>
+            </form>
+            <br>
+            <img src="imagenes/LogoCastro.jpg" width="30%" height="30%">
+            <br>
+            <br>
+            <p class="card-text"><small>Aplicación desarrollada en el IES Juan Antonio Castro (Talavera de la Reina)</small></p>
+            <p class="card-text"><small>Departamento de Tecnología</small></p>
+        </div>
+    </div>        
+
+    </center>
+
+    <script src="js/main_io.js"></script>
+</body>
+</html>
